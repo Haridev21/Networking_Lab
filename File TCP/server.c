@@ -19,8 +19,8 @@
 
   while(1)
   {
-     client_desc=accept(sock_desc,(struct sockaddr *)&client_addr,&client_size);
-     printf("Client Connected\n");
+      client_desc=accept(sock_desc,(struct sockaddr *)&client_addr,&client_size);
+      printf("Client Connected\n");
       pid_t pid =fork();
       int a;
       a=getpid();
